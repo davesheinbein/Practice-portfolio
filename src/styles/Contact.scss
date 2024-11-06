@@ -1,0 +1,111 @@
+.contact {
+	background-color: #512da8;
+	color: #ffffff;
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	h2 {
+		color: #ffffff;
+		margin-bottom: 1rem;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		max-width: 500px;
+
+		label {
+			font-size: 1rem;
+			margin-top: 1rem;
+			color: #333;
+		}
+
+		div {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		input,
+		textarea,
+		select {
+			width: 100%;
+			padding: 0.75rem;
+			margin-top: 0.5rem;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			font-size: 1rem;
+			transition: border-color 0.3s ease;
+
+			&:focus {
+				border-color: #333;
+				outline: none;
+			}
+		}
+
+		textarea {
+			height: 150px;
+		}
+
+		.submit-button {
+			background-color: #512da8;
+			color: white;
+			padding: 0.75rem;
+			font-size: 1rem;
+			border: 1px #ffffff solid;
+			border-radius: 25px;
+			margin-top: 1.5rem;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+
+			&:hover {
+				background-color: #3e1e7b;
+			}
+		}
+
+		.error-message {
+			color: red;
+			font-size: 0.875rem;
+			margin-top: 0.25rem;
+		}
+
+		.loading-spinner {
+			display: inline-block;
+			width: 1rem;
+			height: 1rem;
+			border: 2px solid white;
+			border-radius: 50%;
+			border-top-color: transparent;
+			animation: spin 1s linear infinite;
+		}
+
+		@keyframes spin {
+			to {
+				transform: rotate(360deg);
+			}
+		}
+	}
+
+	.success-message,
+	.error-alert {
+		width: 100%;
+		max-width: 500px;
+		padding: 1rem;
+		margin-top: 1rem;
+		text-align: center;
+		border-radius: 5px;
+		font-size: 1rem;
+	}
+
+	.success-message {
+		background-color: #d4edda;
+		color: #155724;
+	}
+
+	.error-alert {
+		background-color: #f8d7da;
+		color: #721c24;
+	}
+}

@@ -1,0 +1,13 @@
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  height: 20px;
+}
+.footer p {
+  margin: 0;
+  font-size: 1rem;
+}/*# sourceMappingURL=Footer.css.map */

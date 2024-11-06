@@ -1,0 +1,36 @@
+.landing {
+	background-color: #2a4365;
+	color: white;
+	text-align: center;
+	padding: 3rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+
+	.avatar {
+		border: 1px solid #ffffff;
+		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+		width: 350px;
+		height: 350px;
+		border-radius: 50%;
+		margin-bottom: 1rem;
+		transition: transform 0.3s ease;
+
+		&:hover {
+			transform: scale(1.1);
+		}
+	}
+
+	h1 {
+		font-size: 2.5rem;
+		margin-bottom: 0.5rem;
+	}
+
+	p {
+		font-size: 1.25rem;
+		max-width: 500px;
+		line-height: 1.5;
+	}
+}
