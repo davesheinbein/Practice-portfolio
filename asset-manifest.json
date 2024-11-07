@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Practice-portfolio/static/css/main.15abbb65.css",
-    "main.js": "/Practice-portfolio/static/js/main.bdbacd7c.js",
+    "main.css": "/Practice-portfolio/static/css/main.919e8011.css",
+    "main.js": "/Practice-portfolio/static/js/main.fbca7b19.js",
     "index.html": "/Practice-portfolio/index.html",
-    "main.15abbb65.css.map": "/Practice-portfolio/static/css/main.15abbb65.css.map",
-    "main.bdbacd7c.js.map": "/Practice-portfolio/static/js/main.bdbacd7c.js.map"
+    "main.919e8011.css.map": "/Practice-portfolio/static/css/main.919e8011.css.map",
+    "main.fbca7b19.js.map": "/Practice-portfolio/static/js/main.fbca7b19.js.map"
   },
   "entrypoints": [
-    "static/css/main.15abbb65.css",
-    "static/js/main.bdbacd7c.js"
+    "static/css/main.919e8011.css",
+    "static/js/main.fbca7b19.js"
   ]
 }
