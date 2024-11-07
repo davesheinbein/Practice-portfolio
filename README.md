@@ -1,5 +1,7 @@
 # Practice Portfolio (Contact Form)
 
+[Visit the website](https://davesheinbein.github.io/Practice-portfolio/)
+
 A fully functional contact form built with React, styled with SCSS, and designed for use in a portfolio or personal website. This form allows users to submit their contact details, including name, email, inquiry type, and message, with real-time validation and error handling.
 
 ## Features
