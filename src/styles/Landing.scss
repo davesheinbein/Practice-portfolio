@@ -9,12 +9,13 @@
 	justify-content: center;
 	height: 100vh;
 	scroll-behavior: smooth;
+	font-family: 'Courier New', Courier, monospace !important;
 
 	.avatar {
 		border: 1px solid #ffffff;
 		box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-		width: 350px;
-		height: 350px;
+		width: 150px;
+		height: 150px;
 		border-radius: 50%;
 		margin-bottom: 1rem;
 		transition: transform 0.3s ease;
@@ -25,12 +26,12 @@
 	}
 
 	h1 {
-		font-size: 2.5rem;
+		font-size: 1rem;
 		margin-bottom: 0.5rem;
 	}
 
 	p {
-		font-size: 1.25rem;
+		font-size: 2.5rem;
 		max-width: 500px;
 		line-height: 1.5;
 	}
