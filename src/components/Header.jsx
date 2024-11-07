@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/Header.css';
 
 const Header = () => {
+	const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
+	const [visible, setVisible] = useState(true);
+
 	const socialLinks = [
 		{ name: 'GitHub', url: 'https://github.com' },
 		{ name: 'LinkedIn', url: 'https://linkedin.com' },
@@ -10,8 +13,19 @@ const Header = () => {
 		{ name: 'Facebook', url: 'https://facebook.com' },
 	];
 
+	const handleScroll = () => {
+		const currentScrollPos = window.pageYOffset;
+		setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
+		setPrevScrollPos(currentScrollPos);
+	};
+
+	useEffect(() => {
+		window.addEventListener('scroll', handleScroll);
+		return () => window.removeEventListener('scroll', handleScroll);
+	}, [prevScrollPos, visible, handleScroll]);
+
 	return (
-		<header>
+		<header style={{ top: visible ? '0' : '-60px' }}>
 			<nav>
 				<ul className='social-links'>
 					{socialLinks.map((link, index) => (

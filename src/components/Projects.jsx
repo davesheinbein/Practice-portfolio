@@ -55,7 +55,12 @@ const Projects = () => {
 						<div className='project-info'>
 							<h3>{project.title}</h3>
 							<p>{project.description}</p>
-							<a href='#' className='see-more'>
+							<a
+								href={project.githubUrl}
+								className='see-more'
+								target='_blank'
+								rel='noopener noreferrer'
+							>
 								See more &rarr;
 							</a>
 						</div>

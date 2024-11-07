@@ -9,6 +9,7 @@ header {
 	position: sticky;
 	top: 0;
 	z-index: 1000;
+	transition: top 0.3s;
 
 	nav {
 		display: flex;
@@ -69,6 +70,7 @@ header {
 				font-size: 1rem;
 				text-transform: uppercase;
 				letter-spacing: 0.05rem;
+				scroll-behavior: smooth;
 
 				&:hover {
 					color: #f0c674;
